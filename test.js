@@ -50,8 +50,49 @@ console.log(typeof hasbeenWatched);
 // Associate appropriate values to each of these keys.
 
 let episode = {
-    title: "Test",
+    title: "Hallokes",
     duration: 45,
     hasbeenWatched: true,
 }
 
+console.log(episode.duration)
+
+let episodeTitle_2 = console.log(episode.title);
+let episodeDuration_2 = console.log(episode.duration);
+let episodeHasBeenWatched_2 = console.log(episode.hasbeenWatched);
+
+// Now that you know about classes, it's time to use one for our episode component. This time, there are three episode components, so the logical way of doing things is to create an  Episode  class, and then three instances of it — one for each episode.
+
+// Create a class called Episode using the class keyword.
+
+// Create a constructor for the Episode class. It should accept three arguments:
+
+// title
+
+// duration
+
+// hasBeenWatched
+
+class Episode {
+    constructor(batou,tijd,hallokes){
+        this.title = batou,
+        this.duration = tijd
+        this.hasBeenWatched = hallokes
+    }
+}
+
+let firstEpisode = new Episode ("test", 45, true);
+let secondEpisode = new Episode ("hallokes",40, false);
+let thirdEpisode = new Episode ("yowkes", 35, true);
+
+console.log(firstEpisode);
+
+// Using the  this  keyword, make sure the constructor assigns the received arguments to the corresponding fields in the new instance. Using the  new  keyword, create three instances of the  Episode  and store them in the variables:
+
+// firstEpisode
+
+// secondEpisode
+
+// thirdEpisode
+
+// Remember to pass appropriate arguments to each!
