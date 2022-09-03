@@ -101,7 +101,7 @@ console.log(firstEpisode);
 
 // Try changing the order in which you add the episodes, and watch what happens as it refreshes.
 
-let episodes = ["firstEpisode", 'secondEpisode', 'thirdEpisode']
+// let episodes = ["firstEpisode", 'secondEpisode', 'thirdEpisode']
 
 
 // var obj = { first: 'reference' };
@@ -226,20 +226,30 @@ var personObj1 = {
     name: 'Alex',
     age: 30
 };
-changeAgeAndReference(personObj1);
+personObj2 = changeAgeAndReference(personObj1);
 console.log(personObj1); // -> ?
-// console.log(personObj2); // -> ?
+console.log(personObj2); // -> ?
 
 
-// var personObj1 = {
-//     name: 'Alex',
-//     age: 30
-// };
+var personObj3 = {
+    name: 'Alex',
+    age: 30
+};
 
-// personObj1.age = 25;
-// personObj1 = {
-//     name: 'John',
-//     age: 50
-// };
+personObj3.age = 25;
+personObj3 = {
+    name: 'John',
+    age: 50
+};
 
-// console.log(personObj1);
+console.log(personObj3);
+
+let episodes = [];
+
+episodes.push(firstEpisode);
+episodes.push(secondEpide);
+episodes.push(thirdEpisode);
+episodes.push(thirdEpisode);
+
+console.log(episodes)
+
