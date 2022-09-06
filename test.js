@@ -247,9 +247,31 @@ console.log(personObj3);
 let episodes = [];
 
 episodes.push(firstEpisode);
-episodes.push(secondEpide);
+episodes.push(secondEpisode);
 episodes.push(thirdEpisode);
 episodes.push(thirdEpisode);
 
-console.log(episodes)
+console.log(episodes);
+
+const wrongMap = new Map();
+// wrongMap['bla'] = 'blaa';
+// wrongMap['bla2'] = 'blaaa2';
+wrongMap.set('bla', 'blaa');
+wrongMap.set('bla2', 'blaaa2');
+
+
+console.log(wrongMap.get('bla')); 
+
+// console.log(wrongMap.has('bla'));
+
+let  numberOfSeats = true
+
+let numberOfGuests = 1;
+
+if (numberOfSeats == numberOfGuests) {
+    console.log('they are not equal');
+} else {
+    console.log("they're equal");
+}
+
 
