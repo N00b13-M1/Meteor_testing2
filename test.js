@@ -268,10 +268,40 @@ let  numberOfSeats = true
 
 let numberOfGuests = 1;
 
-if (numberOfSeats == numberOfGuests) {
+if (numberOfSeats !== numberOfGuests) {
     console.log('they are not equal');
 } else {
     console.log("they're equal");
 }
 
+
+// class Episode {
+//     constructor(title, duration, minutesWatched) {
+//       this.title = title;
+//       this.duration = duration;
+//       // Add logic here
+//       // ======================
+//     if (minutesWatched == 0 ) {
+//         this.watchedText = "Not yet watched";
+//         this.continueWatching = true;
+//     }
+//     else if (minutesWatched < duration && minutesWatched > 0){
+//         this.watchedText = "Watching";
+//         this.continueWatching = true;
+//     }
+
+//     else{
+//         this.watchedText = "Watched";
+//         this.continueWatching = false;
+//     }
+//     }
+// }
+
+    
+    let numberOfPassengers = 10;
+    let i;
+
+    for (i = 0; i < numberOfPassengers ; i++) {
+        console.log(`Passenger ${i+1} boarded`);
+    };
 
