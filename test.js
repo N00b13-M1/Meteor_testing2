@@ -298,10 +298,98 @@ if (numberOfSeats !== numberOfGuests) {
 // }
 
     
-    let numberOfPassengers = 10;
+//     let numberOfPassengers = 10;
+//     let i;
+
+//     for (i = 0; i < numberOfPassengers ; i++) {
+//         console.log(`Passenger ${i+1} boarded`);
+//     };
+//     console.log("All passengers boarded");
+
+// const songs = ["Hallokes", "Miauwkes", "Yo", "Çava?"];
+
+
+// for (let i = 0; i < songs.length ;  i++) {
+//     console.log(`Track ${i+1}: ` + songs[i]);
+// };
+
+// for (let i in songs) {
+//     console.log(i)
+//     };
+
+    const passengers = [
+        {
+            name: 'Will Alexander',
+            ticketNumber: 209542
+        },
+        {
+            name: 'Sarah Kate',
+            ticketNumber: 169336
+        },
+        {
+            name: 'Audrey Simon',
+            ticketNumber: 779042
+        },
+        {
+            name: 'Tau Perkington',
+            ticketNumber: 703911
+        }
+    ];
+
     let i;
 
-    for (i = 0; i < numberOfPassengers ; i++) {
-        console.log(`Passenger ${i+1} boarded`);
-    };
+    
+    for (i = 0 ; i < passengers.length ; i++ ) {
+        console.log("Boarding " + passengers[i].name + "with ticket number " + passengers[i].ticketNumber );
+    }
+
+
+
+    // for (let yo of passengers) {
+    //     console.log('Boarding passenger ' + yo.name + ' with ticket number ' + yo.ticketNumber);
+    // }
+    
+
+    let seatsLeft = 8;
+    let passengersLeft = 6;
+    let passengersBoarded = 4;
+
+    while (seatsLeft > 0 && passengersLeft >0) {
+        passengersLeft--;
+        passengersBoarded++;
+        seatsLeft--;
+    }
+
+    console.log(seatsLeft);
+    console.log(passengersLeft);
+    console.log(passengersBoarded);
+
+
+
+    function myLocalScope (){
+        var myVar = 5;
+        console.log(myVar);
+      }
+      myLocalScope();
+    //   console.log(myVar);
+    
+
+    console.log (greeter);
+    var greeter = "say hello"
+
+    // var greeter;
+    // console.log(greeter); // greeter is undefined
+    // greeter = "say hello"
+      
+
+    const add = (number1, number2) => {
+        const result= number1 + number2;
+        return result;
+    }
+
+
+    let test = add(5,42332);
+
+    console.log(test);
+
 
