@@ -438,6 +438,60 @@
 // console.log(JSON.stringify(alex));
 // console.log(JSON.parse(JSON.stringify(alex)));
 
+// function changeAgeAndReference(person) {
+//     person.age = 25;
+//     person = {
+//         name: 'John',
+//         age: 50
+//     };
+    
+//     return person;
+// }
+// var personObj1 = {
+//     name: 'Alex',
+//     age: 30
+// };
+
+// // var personObj2 = changeAgeAndReference(personObj1);
+// console.log(personObj1); // -> ?
+// console.log(changeAgeAndReference(personObj1)); // -> ?
+// // console.log(personObj2); // -> ?
+
+// function changeAgeAndReference(person) {
+//     // person.age = 25;
+//     person = {
+//         name: 'John',
+//         age: 50
+//     };
+    
+//     return person;
+// }
+// var personObj1 = {
+//     name: 'Alex',
+//     age: 30
+// };
+
+// var personObj2 = changeAgeAndReference(personObj1);
+
+// console.log(personObj1);
+// console.log(personObj2);
+
+//a
+
+// function changeAgeImpure(person) {
+//     person.age = 25;
+//     return person;
+// }
+// var alex = {
+//     name: 'Alex',
+//     age: 30
+// };
+// var changedAlex = changeAgeImpure(alex);
+// console.log(alex); // -> { name: 'Alex', age: 25 }
+// console.log(changedAlex);
+
+//b
+
 function changeAgeAndReference(person) {
     person.age = 25;
     person = {
@@ -446,15 +500,26 @@ function changeAgeAndReference(person) {
     };
     
     return person;
+    
 }
 var personObj1 = {
     name: 'Alex',
     age: 30
 };
+var personObj2 = changeAgeAndReference(personObj1);
+console.log(personObj1);
+console.log(personObj2);
 
-// var personObj2 = changeAgeAndReference(personObj1);
-console.log(personObj1); // -> ?
-console.log(changeAgeAndReference(personObj1)); // -> ?
-// console.log(personObj2); // -> ?
+// personObj1 = {
+//         name: 'John',
+//         age: 50
+// };
 
-fgergege
+// var personObj1 = {
+//         name: 'Alex',
+//         age: 30
+// };
+
+
+// console.log(personObj1);
+
