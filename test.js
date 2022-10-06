@@ -492,34 +492,58 @@
 
 //b
 
-function changeAgeAndReference(person) {
-    person.age = 25;
-    person = {
-        name: 'John',
-        age: 50
-    };
-    
-    return person;
-    
-}
-var personObj1 = {
-    name: 'Alex',
-    age: 30
-};
-var personObj2 = changeAgeAndReference(personObj1);
-console.log(personObj1);
-console.log(personObj2);
-
-// personObj1 = {
+// function changeAgeAndReference(person) {
+//     person.age = 25;
+//     person = {
 //         name: 'John',
 //         age: 50
-// };
-
+//     };
+    
+//     return person;
+    
+// }
 // var personObj1 = {
-//         name: 'Alex',
-//         age: 30
+//     name: 'Alex',
+//     age: 30
 // };
+// // var personObj2 = changeAgeAndReference(personObj1);
+// console.log(changeAgeAndReference(personObj1));
+// // console.log(personObj1);
+
+// var obj = { first: 'reference' };
+// obj = { second: 'ref2' }
+
+// console.log(obj);
 
 
-// console.log(personObj1);
+class BankAcount{
+    constructor(name, balance){
+        this.name = name;
+        this.balance = balance;
+    }
+    showBalance(){
+        console.log("Your balance is " + this.balance + " EUR" )
+    }
+    depositToBalance(amount){
+        this.balance += amount
+        console.log("You deposited " + amount + " & your new balance is " + this.balance + " EUR" )
+    }
+
+    withdrawalFromBalance(amount){
+        if (amount > this.balance) {
+            console.log("Your balance is unsufficient, you cannot withdraw " + amount)
+        }
+        else{
+        this.balance -= amount;
+        this.showBalance();
+        }
+    }
+}
+
+const michaelBA = new BankAcount("Michael", 500);
+
+// michaelBA.depositToBalance(100);
+michaelBA.withdrawalFromBalance(800);
+
+console.log(michaelBA);
 
