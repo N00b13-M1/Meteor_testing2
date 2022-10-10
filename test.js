@@ -547,3 +547,38 @@ michaelBA.withdrawalFromBalance(800);
 
 console.log(michaelBA);
 
+// Modify the following code
+// ======================
+
+const tauTitleText = tau.title;
+const tauSeasonsText = tau.numberOfSeasons + ' seasons';
+const tauEpisodesText = tau.episodesPerSeason + ' episodes per season';
+const tauComponent = {
+  titleText: tauTitleText,
+  seasonsText: tauSeasonsText,
+  episodesText: tauEpisodesText
+};
+
+const meldrumTitleText = meldrum.title;
+const meldrumSeasonsText = meldrum.numberOfSeasons + ' seasons';
+const meldrumEpisodesText = meldrum.episodesPerSeason + ' episodes per season';
+const meldrumComponent = {
+  titleText: meldrumTitleText,
+  seasonsText: meldrumSeasonsText,
+  episodesText: meldrumEpisodesText
+};
+
+const claraTitleText = clara.title;
+const claraSeasonsText = clara.numberOfSeasons + ' seasons';
+const claraEpisodesText = clara.episodesPerSeason + ' episodes per season';
+const claraComponent = {
+  titleText: claraTitleText,
+  seasonsText: claraSeasonsText,
+  episodesText: claraEpisodesText
+};
+
+const showComponents = [tauComponent, meldrumComponent, claraComponent];
+
+// ======================
+// Modify the code above
+
