@@ -550,22 +550,17 @@ console.log(michaelBA);
 // Modify the following code
 // ======================
 
-function tvSeries (show){
-        const titleText = show.title;
-        const seasonsText = show.numberOfSeasons + ' seasons';
-        const episodesText = show.episodesPerSeason + ' episodes per season';
-        const component = {
-            titleText: titleText,
-            seasonsText: seasonsText,
-            episodesText: episodesText
-        };
-        return component;
-};
-
-console.log(tvSeries(tau));
-
-
-
+// function tvSeries (show){
+//         const titleText = show.title;
+//         const seasonsText = show.numberOfSeasons + ' seasons';
+//         const episodesText = show.episodesPerSeason + ' episodes per season';
+//         const component = {
+//             titleText: titleText,
+//             seasonsText: seasonsText,
+//             episodesText: episodesText
+//         };
+//         return component;
+// };
 
 // const tauTitleText = tau.title;
 // const tauSeasonsText = tau.numberOfSeasons + ' seasons';
@@ -594,7 +589,49 @@ console.log(tvSeries(tau));
 //   episodesText: claraEpisodesText
 // };
 
-const showComponents = [tauComponent, meldrumComponent, claraComponent];
-// ======================
-// Modify the code above
+// const showComponents = [tauComponent, meldrumComponent, claraComponent];
+// // ======================
+// // Modify the code above
 
+
+// let text = "How are you doing today?";
+// let split = text.split("");
+
+// console.log(split);
+
+
+// const getWordCount = (stringToTest) => {
+//     const wordArray = stringToTest.split(' ');
+//     console.log("This parameter contains: ");
+//     return console.log(wordArray.length);
+//   };
+
+const getWordCount = (stringToTest) => {
+    const wordArray = stringToTest.split(' ');
+    console.log('Word array in getWordCount: ');
+    console.log(wordArray.length);
+    return wordArray.length;
+  }
+
+getWordCount("test this sentence");
+
+
+const commentToTest = {
+    content:'1',
+    subComments: [
+        {content: '1-A', subComments: []},
+        {content: '1-B', subComments: [
+            {content: '1-B-a', subComments: []}
+        ]},
+        {content: '1-C', subComments: [
+            {content: '1-C-a', subComments: [
+                {content: '1-C-a-i', subComments: [
+                ]},
+                {content: '1-C-a-ii', subComments: [
+                ]}
+            ]},
+            {content: '1-C-b', subComments: []}
+        ]},
+        {content: '1-D', subComments: []},
+    ],
+};
