@@ -609,11 +609,11 @@ console.log(michaelBA);
 const getWordCount = (stringToTest) => {
     const wordArray = stringToTest.split(' ');
     console.log('Word array in getWordCount: ');
-    console.log(wordArray.length);
+    // console.log(wordArray.length);
     return wordArray.length;
   }
 
-getWordCount("test this sentence");
+console.log(getWordCount("test this sentence"));
 
 
 const commentToTest = {
@@ -635,3 +635,47 @@ const commentToTest = {
         {content: '1-D', subComments: []},
     ],
 };
+
+
+const getAllComments = (comment) => {
+    let allComments = comment.content;
+    for (let subComment of comment.subComments) {
+      allComments += '\n' + getAllComments(subComment);
+    }
+    return allComments;
+  };
+
+console.log(getAllComments(commentToTest));
+
+
+export class Book {
+    constructor(title, author,description,pages,currentPage,read){
+      this.title = title;
+      this.author = author;
+      this.description = description;
+      this.pages = pages;
+      this.currentPage = currentPage;
+      this.read = read;
+    };
+
+    readBook(page){
+        if(page < 1 || page > this.pages){
+            return 0;
+        }
+        if(page >= 1 && page < this.pages){
+            this.currentPage = page;
+            return 1;
+        }
+        if(page == this.pages) {
+            this.currentPage = page;
+            return 1;
+        }
+    }
+  };
+
+  let book1 = new Book("HTML", "authorX", "descrip1", 60, 0, false);
+  let book2 = new Book("CSS", "authorY", "descrip2", 120, 9, false);
+  let book3 = new Book("JS", "authorZ", "descrip3", 260, 0, false);
+
+  export const books = [book1,book2,book3];
+  
