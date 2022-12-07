@@ -678,4 +678,5 @@ export class Book {
   let book3 = new Book("JS", "authorZ", "descrip3", 260, 0, false);
 
   export const books = [book1,book2,book3];
-  
+
+
